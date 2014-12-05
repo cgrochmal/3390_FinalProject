@@ -4,10 +4,10 @@
 	[q, q];
 }.play;)
 
-
+Saw.ar
 ({
-	var env = SinOsc.kr(0.5,0, 0.5,0);
-	var bass = SinOsc.ar(55, 0,  env*2 );
+	var env = SinOsc.kr(1,0, 0.5,0);
+	var bass = SinOsc.ar(55, 0,  0.5 )* EnvGen.kr(Env.perc(0.01, 1), doneAction: 2);
 
 
 
