@@ -1,6 +1,12 @@
 (
 Pbind(*[
 	instrument: \kick,
+	delta: Pseq(Array.geom(220, 1, 1.0001).reciprocal.reverse),
+]).play;
+)
+(
+Pbind(*[
+	instrument: \kick,
 	delta: Pseq(Array.geom(440, 1, 1.001).reciprocal.reverse),
 ]).play;
 )
